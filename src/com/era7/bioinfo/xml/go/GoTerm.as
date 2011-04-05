@@ -25,6 +25,8 @@ package com.era7.bioinfo.xml.go
 		public static const ASPECT_TAG_NAME:String = "aspect";
 		public static const SOURCE_TAG_NAME:String = "source";
 		
+		public static const FREQUENCY_PERCENTAGE_TAG_NAME:String = "frequency_percentage";
+		
 		/**
 		 * CONSTRUCTOR
 		 */
@@ -93,6 +95,8 @@ package com.era7.bioinfo.xml.go
 		public function set aspect(value:String):void{	setTagText(ASPECT_TAG_NAME,value);}
 		[Bindable]
 		public function set source(value:String):void{	setTagText(SOURCE_TAG_NAME,value);}
+		[Bindable]
+		public function set frequencyPercentage(value:Number):void{	setTagText(FREQUENCY_PERCENTAGE_TAG_NAME,String(value));}
 		
 		//---------------------------------GETTERS------------------------------------
 		public function get id():String{	return getTagText(ID_TAG_NAME);}
@@ -104,6 +108,7 @@ package com.era7.bioinfo.xml.go
 		public function get aspect():String{	return getTagText(ASPECT_TAG_NAME);}
 		public function get source():String{	return getTagText(SOURCE_TAG_NAME);}
 		public function get With():String{	return getTagText(WITH_TAG_NAME);}
+		public function get frequencyPercentage():Number{ return Number(FREQUENCY_PERCENTAGE_TAG_NAME);}
 		
 		
 	}
