@@ -55,12 +55,15 @@ package com.era7.bioinfo.xml.blast
 		public function set id(value:String):void{	setTagText(ID_TAG_NAME,value);}
 		[Bindable]
 		public function set len(value:int):void{	setTagText(HIT_LEN_TAG_NAME, "" + value);}
+		[Bindable]
+		public function set def(value:String):void{	setTagText(HIT_DEF_TAG_NAME, value);}
 		
 		//---------------------------------GETTERS------------------------------------
 		public function get num():int{	return parseInt(getTagText(NUM_TAG_NAME));}
 		public function get accession():String{	return getTagText(ACCESSION_TAG_NAME);}
 		public function get id():String{	return getTagText(ID_TAG_NAME);}
 		public function get len():int{	return parseInt(getTagText(HIT_LEN_TAG_NAME));}
+		public function get def():String{	return getTagText(HIT_DEF_TAG_NAME);}
 		
 		
 		
